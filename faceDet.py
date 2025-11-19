@@ -43,6 +43,10 @@ def detect_faces():
                 })
 
     return jsonify(results_data)
+@app.route("/", methods=["GET"])
+def index():
+    return "Face Detection API is running."
 
 port = int(os.environ.get("PORT", 5000))
+print(f"Server running on port {port}")
 app.run(host="0.0.0.0", port=port)
