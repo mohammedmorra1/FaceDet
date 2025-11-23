@@ -1,0 +1,21 @@
+# Ignore virtual environment
+.venv/
+venv/
+env/
+
+# Ignore readme files
+README*
+readme*
+README.md
+README.Docker.md
+
+# Ignore everything else by default, then whitelist specific files
+*
+
+# Whitelist the files we want to track
+!faceDet.py
+!Dockerfile
+!requirements.txt
+
+# Keep .gitignore itself
+!.gitignore
